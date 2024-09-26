@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.producto h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.producto p {
+    margin: 5px 0;
+    color: #555;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: #fff;
+}
+
+.producto-card h2 {
+    margin: 0 0 8px;
+}
+
+.producto-card p {
+    margin: 8px 0;
+}
+
+.producto-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.producto-card button:hover {
+    background-color: #0056b3;
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.titul {
+    position: relative;
+    text-align: center; 
+}
+
+.titul h1 {
+    display: inline-block; 
+    margin: 0;
+}
+
+.titul button {
+    position: absolute;
+    right: 10%; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.swal2-popup {
+    position: relative; 
+    background: url('https://media0.giphy.com/media/RNbxHVjJZ7yiqAT6ts/giphy.gif?cid=6c09b952hbfrrn9dck6pdl9kxhv2oevw79a6zt0qnoiwbzel&ep=v1_gifs_search&rid=giphy.gif&ct=g') center center no-repeat; 
+    background-size: cover; 
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    width: 80%; 
+    height: 80%; 
+    color: rgb(255, 255, 255); 
+    padding: 20px; 
+    z-index: 1; 
+}
+
+
+.swal2-popup::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.481); 
+    border-radius: 10px; 
+    z-index: -1; 
+}
+
+
+.swal2-title,
+.swal2-content {
+    color: white; 
+    position: relative; 
+}
+
+.swal2-modal {
+    width: 1000px;
+    height: 600px;
+    max-width: 90%; 
+    padding: 20px; 
+}
+
+
+.swal2-title {
+    color: white; 
+    font-size: 1.8em; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.67); 
+}
+
+.swal2-content {
+    color: white; 
+}
+
+
+.swal2-confirm {
+    background-color: #0400ff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.swal2-cancel {
+    background-color: #dc3545;
+    color: white; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+}
+
+
+
+.carrito-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.datos-compra {
+    width: 45%; 
+}
+
+.produc-seleccionados {
+    width: 49%; 
+    max-height: 200px; 
+    overflow-y: auto; 
+    background-color: rgba(0, 0, 0, 0); 
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+.produc-card {
+    border: 2px solid #ffffff; 
+    padding: 15px; 
+    margin: 10px 0; 
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 5px; 
+    justify-content: space-between;
+}
+
+
+.produc-imag {
+    width: 60px;
+    height: 60px;
+    margin-right: 3px;
+}
+
+.produc-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.produc-details {
+    flex: 1; 
+    margin-left: 10px;
+}
+
+.eliminar-btn {
+    background-color: #dc3545; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+}
+
+.eliminar-btn:hover {
+    background-color: #c82333; 
+}
+
+
+.carrito-container {
+    margin-bottom: 10px; 
+}
+
+.total {
+    margin-top: 10px; 
+}
+
+.forma-pago-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin: 0 auto; 
+}
+
+.swal2-title {
+    color: white; 
+    font-size: 1.8em; 
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+.swal2-content, .datos-compra, .forma-pago-container {
+    color: white; 
+}
+
+.eliminar-btn {
+    color: white; 
+}
+
+label {
+    color: white; 
+}
+.swal2-title-custom {
+    color: white; 
+}
+
+.swal2-text-custom {
+    color: white; 
+}
+
